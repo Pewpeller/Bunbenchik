@@ -9,7 +9,7 @@ const program = new Command();
 
 program
   .name('bun run convert.js')
-  .description('Супер-безопасный充конвертер изображений для фиксированной структуры папок с защитой файлов')
+  .description('Конвертер изображений для фиксированной структуры папок')
   .option('--formats <list>', 'Кодировать в форматы через запятую (jpg, png, png8, webp, avif)')
   .option('--sizes <list>', 'Целевые ширины через запятую (e.g., 1600w,1200w,640w)')
   .option('--aspect <ratio>', 'Соотношение сторон холста (e.g., 16/9, 4/3, 1/1)') // Обновили подсказку
@@ -22,7 +22,7 @@ const options = program.opts();
 
 // Жестко зафиксированные папки внутри проекта
 const BASE_SRC_DIR = path.resolve('./public/src/img');
-const BASE_OUTPUT_DIR = path.resolve('./public/src/img/converted');
+const BASE_OUTPUT_DIR = path.resolve('./public/img');
 
 // ИНТЕРАКТИВНАЯ ПОМОЩЬ И ВАЛИДАЦИЯ:
 if (!options.clean && (!options.formats || !options.sizes)) {
@@ -43,7 +43,7 @@ function askQuestion(query) {
 	}));
 }
 
-// Парсинг соотношения сторон (теперь через слэш "/", например "16/9")
+// Парсинг соотношения сторон (например "16/9")
 function parseAspectRatio(aspectStr) {
 	if (!aspectStr) return null;
 	const parts = aspectStr.split('/'); // Меняем разделитель на слэш
@@ -84,7 +84,7 @@ async function findExistingSizeFolders() {
 	}
 }
 
-// Ювелирная очистка файлов изображений и последующее удаление пустых папок размеров
+// Очистка файлов изображений и последующее удаление пустых папок размеров
 async function cleanImageFilesOnly(targetWidths) {
 	const allowedExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.avif'];
 
