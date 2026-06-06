@@ -1,0 +1,16 @@
+@font-face {
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+	src: url('fonts/Aptos.ttf') format('truetype');
+	font-family: 'Aptos';
+	font-display: swap;
+}
+@font-face {
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: normal;
+	src: url('fonts/Aptos-SemiBold.ttf') format('truetype');
+	font-family: 'Aptos';
+	font-display: swap;
+}

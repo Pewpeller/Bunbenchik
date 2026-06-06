@@ -1,0 +1,7 @@
+.layout {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 2rem;
+	width: 100%;
+	max-width: 144rem;
+}

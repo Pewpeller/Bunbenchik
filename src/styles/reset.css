@@ -1,0 +1,64 @@
+/* quick reset */
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+	font-family: Aptos, Arial, sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+figcaption {
+	margin: 0;
+}
+
+ul[class],
+ol[class] {
+	padding: 0;
+	list-style: none;
+}
+
+/* Set core body defaults */
+body {
+	box-sizing: border-box;
+	background-color: #000;
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
+	color: #fff;
+	line-height: 1.5;
+	/* text-rendering: optimizeLegibility; */
+	text-rendering: auto;
+}
+
+/* Make images easier to work with */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+select {
+	font: inherit;
+}
+/* quick reset end */
+
+:focus:not(:focus-visible) {
+	outline: 0;
+}

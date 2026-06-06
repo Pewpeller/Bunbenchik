@@ -1,0 +1,16 @@
+.vicon {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	fill: currentcolor;
+	font: 20px/0 a;
+
+	&__body {
+		display: block;
+		transform: translateX(0);
+		-ms-transform: translate(0.5px, -0.3px);
+		background: inherit;
+		width: 1em;
+		height: 1em;
+	}
+}

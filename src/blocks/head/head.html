@@ -1,0 +1,27 @@
+<head>
+    <title><%= typeof title !== 'undefined' ? title : 'kommersant.ru' %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta name="title" content="<%= typeof title !== 'undefined' ? title : 'kommersant.ru' %>" />
+    <% if (typeof description !== 'undefined' && description) { %>
+        <meta name="description" content="<%= description %>">
+    <% } %>
+    <% if (typeof keywords !== 'undefined' && keywords) { %>
+        <meta name="keywords" content="<%= keywords %>">
+    <% } %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/svg+xml" href="https://iv.kommersant.ru/ContentFlex/images/favicons2020/favicon.svg">
+
+    <meta name="theme-color" content="#ffffff">  
+
+    <% if (typeof css !== 'undefined' && css) { %>
+        <link rel="stylesheet" href="<%= css %>">
+    <% } %>
+
+<script>
+        document.documentElement.classList.remove('no-js');
+    </script>
+</head>

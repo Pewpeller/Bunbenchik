@@ -1,0 +1,9 @@
+/* Импортируем глобальные стили */
+@import '/src/styles/reset.css';
+@import '/src/styles/fonts.css';
+@import '/src/styles/common.css';
+@import '/src/styles/ui.css';
+@import '/src/styles/layout.css';
+@import '/src/styles/vicons.css';
+
+@import '/src/blocks/hello/hello.css';
