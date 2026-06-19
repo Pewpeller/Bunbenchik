@@ -10,8 +10,11 @@
 		z-index: 1;
 		filter: drop-shadow(0 0 0.7rem #c30b03) drop-shadow(0 0 1rem #c30b03);
 		color: #c30b03;
-		font-size: fluid_prop(28rem, 48rem, 1rem, 1.6rem);
-		line-height: 1.2;
+		font: 1.6rem/2rem a;
+		font-family: inherit;
+		@include media(">=max_mobile", "<=desk") {
+			font-size: fluid_prop(64rem, 144rem, 2rem, 4.6rem);
+		}
 	}
 	&__img {
 		position: absolute;

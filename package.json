@@ -13,9 +13,14 @@
     "clean_images": "node convert.js --clean"
   },
   "browserslist": [
-    "last 4 versions",
-    "> 2% in RU",
-    "Safari >= 13"
+    "Chrome >= 109",
+    "ChromeAndroid >= 109",
+    "Safari >= 16.4",
+    "iOS >= 16.4",
+    "Firefox >= 137",
+    "FirefoxAndroid >= 137",
+    "Edge >= 134",
+    "Samsung >= 27"
   ],
   "devDependencies": {
     "browserslist": "^4.24.0",
@@ -23,7 +28,7 @@
     "glob": "^10.4.1",
     "lightningcss": "^1.30.1",
     "postcss": "^8.5.15",
-    "postcss-mixins": "^12.1.2",
+    "postcss-lightningcss": "^1.1.0",
     "postcss-nested": "^7.0.2",
     "prettier": "^3.2.5",
     "prettier-plugin-css-order": "^2.1.2",
